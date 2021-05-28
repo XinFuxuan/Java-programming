@@ -7,6 +7,23 @@ public class Address {
     private String zipCode;
     private String country="USA";
 
+    public Address() { // consructor method special method no return type, same name as class name,
+        // it is used to initialize the instance variables
+        System.out.println("address constructor");
+        street="Unknown";
+        city="Unknown";
+        state="Unknown";
+        zipCode="Unknown";
+    }
+    // second constructor, overlaoded constructor to provide shortcut to initialize variable.
+    // in same statement:
+    public Address(String street, String city, String state, String zipCode){
+       // this.street=street;
+        setStreet(street); // better way we could set conditions
+
+    }
+
+
     public void setStreet(String street) { this.street = street;}
     public String getStreet() { return street; }
 
