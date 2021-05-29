@@ -32,6 +32,10 @@ public class CyberteckSchoolGroup {
             System.out.println("Akrem is not a member of group2");
         }
 
+        group1.removeMember("Elvin");
+        System.out.println(group1.getMembers().size());
+
+
 
 
     }
