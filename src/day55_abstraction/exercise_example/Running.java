@@ -4,11 +4,21 @@ public class Running extends Exercise{
 
     @Override
     public void perform() {
+        System.out.println("performing running ");
 
     }
+
+    /**
+     *
+     * @param minutes - how long is exercise is performed
+     * @return - assuming that the average per min burning of clories is 13
+     */
 
     @Override
     public int getCaloriesCount(int minutes) {
-        return 0;
+        return minutes * 13;
     }
+
 }
+
+
